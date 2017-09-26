@@ -25,7 +25,7 @@ public class StockService {
             count++;
             if (Math.random() > 0.8) {
                 LOG.warn("Some error happened...");
-                emitter.onError(new RuntimeException("Ooops"));
+                emitter.onError(new RuntimeException("Ooops - thrown intentionally..."));
             }
         }
 
