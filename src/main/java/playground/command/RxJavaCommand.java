@@ -8,7 +8,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 
-public class RxJavaCommand extends ParallelStreamCommand {
+public class RxJavaCommand extends StreamCommand {
 
     @Override
     protected void executeInternal(Consumer consumer) throws Exception {

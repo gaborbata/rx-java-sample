@@ -5,7 +5,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-public class StreamApiCommand extends ParallelStreamCommand {
+public class StreamApiCommand extends StreamCommand {
 
     @Override
     protected void executeInternal(Consumer consumer) throws Exception {

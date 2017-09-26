@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Schedulers;
 
-public class ReactorCommand extends ParallelStreamCommand {
+public class ReactorCommand extends StreamCommand {
 
     @Override
     protected void executeInternal(Consumer consumer) throws Exception {

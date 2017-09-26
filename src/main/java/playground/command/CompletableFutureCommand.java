@@ -6,9 +6,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import static playground.command.ParallelStreamCommand.THREAD_NUMBER;
+import static playground.command.StreamCommand.THREAD_NUMBER;
 
-public class CompletableFutureCommand extends ParallelStreamCommand {
+public class CompletableFutureCommand extends StreamCommand {
 
     @Override
     protected void executeInternal(Consumer consumer) throws Exception {
