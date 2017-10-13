@@ -12,7 +12,7 @@ public class ReactorCommand extends StreamCommand {
         Flux<Integer> numbers = Flux.fromIterable(getNumbers());
 
         String values = numbers.parallel(THREAD_NUMBER)
-                .runOn(Schedulers.parallel())
+                .runOn(Schedulers.newParallel("reactor", THREAD_NUMBER, true))
                 .map(this::slowMappingFunction)
                 .sequential()
                 .collect(Collectors.joining(","))
